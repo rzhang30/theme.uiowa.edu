@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Theme Semester Basic Page Entity feature.
+ */
+
+include_once 'theme_semester_basic_page_entity.features.inc';

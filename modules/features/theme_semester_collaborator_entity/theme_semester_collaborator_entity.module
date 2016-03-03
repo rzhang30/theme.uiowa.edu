@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Theme Semester Collaborator Entity feature.
+ */
+
+include_once 'theme_semester_collaborator_entity.features.inc';

@@ -1,0 +1,62 @@
+<?php
+/**
+ * @file
+ * Code for the Theme Semester Article Entity feature.
+ */
+
+include_once 'theme_semester_article_entity.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter.
+ */
+function theme_semester_article_entity_form_article_node_form_alter(&$form, &$form_state, $form_id) {
+
+  // Add states relating to the type of OVPRED Sub Article.
+  $form['field_article_iowanow_url']['#states'] = array(
+    'visible' => array(
+      ':input[name="field_article_type[und]"]' => array('value' => '2_ianow'),
+    ),
+  );
+
+  $form['field_article_external_url']['#states'] = array(
+    'visible' => array(
+      ':input[name="field_article_type[und]"]' => array('value' => '3_external'),
+    ),
+  );
+
+  $form['field_article_publication_source']['#states'] = array(
+    'visible' => array(
+      ':input[name="field_article_type[und]"]' => array('value' => '3_external'),
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function theme_semester_article_entity_preprocess_node(&$variables) {
+  if($variables['type'] == 'article') {
+    // Create a new theme hook suggestion for node--ovpred_sub_article--iowanow.tpl.php
+    // to be used instead of node--article.tpl.php
+    $suggestion = 'node__article';
+    $variables['theme_hook_suggestions'][] = $suggestion;
+    $variables['theme_hook_suggestions'][] = $suggestion . '__' . $variables['view_mode'];
+
+    if(!empty($variables['field_article_iowanow_url'])) {
+      $iowanow = $variables['field_article_iowanow_url'][LANGUAGE_NONE][0]['url'];
+      $variables['node_url'] = $iowanow;
+      if(!empty($variables['content']['links']['node']['#links']['node-readmore'])) {
+        $variables['content']['links']['node']['#links']['node-readmore']['href'] = $iowanow;
+      }
+    }
+
+    if(!empty($variables['field_article_external_url'])) {
+      $external = $variables['field_article_external_url'][LANGUAGE_NONE][0]['url'];
+      $variables['node_url'] = $external;
+      if(!empty($variables['content']['links']['node']['#links']['node-readmore'])) {
+        $variables['content']['links']['node']['#links']['node-readmore']['href'] = $external;
+      }
+    }
+  }
+}

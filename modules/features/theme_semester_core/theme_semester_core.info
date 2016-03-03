@@ -1,0 +1,17 @@
+name = Theme Semester Core
+core = 7.x
+package = Theme Semester
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = strongarm
+dependencies[] = taxonomy
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_file_image_alt_text
+features[field_base][] = field_file_image_title_text
+features[field_base][] = field_tags
+features[taxonomy][] = tags

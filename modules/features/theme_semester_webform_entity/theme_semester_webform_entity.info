@@ -1,0 +1,12 @@
+name = Theme Semester Webform Entity
+core = 7.x
+package = Theme Semester
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = metatag
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[node][] = webform
+features[variable][] = comment_webform
