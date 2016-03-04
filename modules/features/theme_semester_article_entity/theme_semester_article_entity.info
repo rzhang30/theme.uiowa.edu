@@ -25,3 +25,4 @@ features[field_instance][] = node-article-field_article_type
 features[field_instance][] = node-article-field_tags
 features[node][] = article
 features[variable][] = field_bundle_settings_node__article
+features[variable][] = pathauto_node_article_pattern

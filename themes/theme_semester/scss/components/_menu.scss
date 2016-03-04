@@ -1,2 +1,60 @@
 // Styles for Menus and Navs
 // -----------------------------------------------------------------------------
+.navbar{
+  @include box-shadow(0 2px 1px rgba(0,0,0,0.2));
+}
+
+#nav ul.responsive-navigation-main-menu{
+  display: flex;
+  justify-content: space-between;
+  li{
+    text-align: center;
+    padding: 15px 0;
+    a{
+      padding: 0 20px;
+      color: #333333;
+      text-decoration: none;
+      font-family: $font-family-sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.sidebar{
+  padding: 20px;
+  h4{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+  }
+  ul.nav-pills{
+    background-color: #CCCECD;
+    border: 1px solid $theme-alt-color;
+    padding: 10px;
+    font-family: $font-family-serif;
+    li{
+      list-style-type: none;
+      font-size: 1.6rem;
+      a{
+        @include border-radius(0);
+        color: $gray-dark;
+        &:hover, &:focus{
+          background-color: inherit;
+          color: $gray-dark;
+        }
+      }
+      &.active{
+        a{
+          background-color: #C0C0C0;
+          color: $gray-dark;
+        }
+      }
+      .submenu{
+        margin-left: 20px;
+      }
+    }
+  }
+}

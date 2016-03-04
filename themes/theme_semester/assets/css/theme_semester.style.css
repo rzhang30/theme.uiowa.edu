@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1046,7 +1048,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1128,7 +1130,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -5189,7 +5191,7 @@ button.close {
   position: absolute;
   z-index: 1030;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5302,7 +5304,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8476,5 +8478,103 @@ ul.dropdown-menu li {
 .views-exposed-form .views-submit-button,
 .views-exposed-form .views-reset-button {
   margin-top: 3px; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+.navbar {
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
+
+#nav ul.responsive-navigation-main-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #nav ul.responsive-navigation-main-menu li {
+    text-align: center;
+    padding: 15px 0; }
+    #nav ul.responsive-navigation-main-menu li a {
+      padding: 0 20px;
+      color: #333333;
+      text-decoration: none;
+      font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+      #nav ul.responsive-navigation-main-menu li a:hover {
+        text-decoration: underline; }
+
+.sidebar {
+  padding: 20px; }
+  .sidebar h4 {
+    font-size: 2.8rem;
+    text-transform: uppercase; }
+  .sidebar ul.nav-pills {
+    background-color: #CCCECD;
+    border: 1px solid #FFD602;
+    padding: 10px;
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif; }
+    .sidebar ul.nav-pills li {
+      list-style-type: none;
+      font-size: 1.6rem; }
+      .sidebar ul.nav-pills li a {
+        border-radius: 0;
+        color: #333333; }
+        .sidebar ul.nav-pills li a:hover, .sidebar ul.nav-pills li a:focus {
+          background-color: inherit;
+          color: #333333; }
+      .sidebar ul.nav-pills li.active a {
+        background-color: #C0C0C0;
+        color: #333333; }
+      .sidebar ul.nav-pills li .submenu {
+        margin-left: 20px; }
+
+header {
+  background-color: #4C4F4E;
+  text-align: center;
+  padding: 20px 0; }
+  header .site-slogan {
+    font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400; }
+  header .site-name {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 1.2em;
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    text-transform: uppercase; }
+    header .site-name a {
+      color: #ffffff;
+      text-decoration: none; }
+
+@media only screen and (min-width: 768px) {
+  #main-wrapper #content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    #main-wrapper #content .sidebar {
+      -webkit-flex: 0 0 25%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%; }
+    #main-wrapper #content .content {
+      -webkit-flex: 1 0 73%;
+      -ms-flex: 1 0 73%;
+          flex: 1 0 73%; } }
+
+.field-name-body {
+  font-size: 1.6rem;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=theme_semester.style.css.map */

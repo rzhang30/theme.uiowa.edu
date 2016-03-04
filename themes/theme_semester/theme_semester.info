@@ -9,6 +9,9 @@ base theme  = radix
 
 ; Regions
 regions[content] = Content
+regions[navigation] = Navigation
+regions[sidebar] = Sidebar
+regions[footer] = Footer
 
 ; Breakpoints
 breakpoints[xs] = (max-width: 767px)
@@ -31,4 +34,3 @@ version = "7.x-3.3"
 core = "7.x"
 project = "radix"
 datestamp = "1454337570"
-

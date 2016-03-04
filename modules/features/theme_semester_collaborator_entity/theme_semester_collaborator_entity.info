@@ -35,4 +35,5 @@ features[variable][] = menu_parent_collaborator
 features[variable][] = node_options_collaborator
 features[variable][] = node_preview_collaborator
 features[variable][] = node_submitted_collaborator
+features[variable][] = pathauto_node_collaborator_pattern
 features_exclude[field_base][body] = body

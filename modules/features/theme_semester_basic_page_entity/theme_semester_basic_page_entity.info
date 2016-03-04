@@ -14,4 +14,5 @@ features[node][] = page
 features[variable][] = field_bundle_settings_node__page
 features[variable][] = node_options_page
 features[variable][] = node_submitted_page
+features[variable][] = pathauto_node_page_pattern
 features_exclude[dependencies][theme_semester_collaborator_entity] = theme_semester_collaborator_entity
