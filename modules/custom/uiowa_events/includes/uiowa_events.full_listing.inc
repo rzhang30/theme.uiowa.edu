@@ -47,7 +47,7 @@ function theme_uiowa_events_full_listing_date_nav($variables){
   $nav['pagination'] = array(
     '#prefix' => '<ul class="pagination">',
     '#markup' => '  <li>
-                      <a href="'.$base_url.base_path().'events/'.date('Y-m-d', strtotime("-1 days", strtotime($page_date))).'" aria-label="Previous">
+                      <a href="'.$base_url.'/events/'.date('Y-m-d', strtotime("-1 days", strtotime($page_date))).'" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                       </a>
                     </li>
@@ -55,7 +55,7 @@ function theme_uiowa_events_full_listing_date_nav($variables){
                         <a href="#">'.date('l, F j',strtotime($page_date)).'</a>
                     </li>
                     <li>
-                      <a href="'.$base_url.base_path().'events/'.date('Y-m-d', strtotime("+1 days", strtotime($page_date))).'" aria-label="Next">
+                      <a href="'.$base_url.'/events/'.date('Y-m-d', strtotime("+1 days", strtotime($page_date))).'" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                       </a>
                     </li>',
@@ -84,7 +84,7 @@ function theme_uiowa_events_teaser($variables){
 
   $title_link = '';
   if($external_link) $title_link = '<h3><a href="http://events.uiowa.edu/event/'.$variables['event']['id'].'">'.$variables['event']['title'].'</a></h3>';
-  else $title_link = '<h3><a href="'.$base_url.base_path().'event/'.$variables['event']['id'].'">'.$variables['event']['title'].'</a></h3>';
+  else $title_link = '<h3><a href="'.$base_url.'/event/'.$variables['event']['id'].'">'.$variables['event']['title'].'</a></h3>';
   $event['container']['title'] = array(
     '#markup' => $title_link,
   );

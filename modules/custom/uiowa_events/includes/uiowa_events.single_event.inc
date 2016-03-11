@@ -7,14 +7,14 @@
  *   Array reference of arguments given to the theme() function.
  */
 function template_preprocess_uiowa_events_single_event(&$variables) {
-
+  global $base_url;
   // Setting the title
   drupal_set_title($variables['title']);
 
   // Generating the breadcrumb trail
   $breadcrumb = array();
   $breadcrumb[] = l('Home', '<front>');
-  $breadcrumb[] = l('Events', 'events');
+  $breadcrumb[] = l('Events', $base_url.'/events/');
   drupal_set_breadcrumb($breadcrumb);
 
   //Variables used to get the event instances
