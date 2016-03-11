@@ -1,0 +1,34 @@
+#uiowa-event {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#uiowa-event #main-column {
+  -webkit-flex: 1 0 64%;
+  -ms-flex: 1 0 64%;
+  flex: 1 0 64%;
+}
+
+#uiowa-event .future-instances{
+  display: none;
+}
+
+#uiowa-event #secondary-column {
+  -webkit-flex: 0 0 33%;
+  -ms-flex: 0 0 33%;
+  flex: 0 0 33%;
+}
+
+#uiowa-event #secondary-column img,
+#uiowa-event #secondary-column .btn {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 70%;
+}

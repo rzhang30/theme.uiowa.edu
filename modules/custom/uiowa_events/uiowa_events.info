@@ -1,0 +1,14 @@
+name = University of Iowa Events
+description = Provides dynamic views from the University of Iowa events promotion system.
+core = 7.x
+package = University of Iowa
+
+dependencies[] = imagecache_external
+files[] = uiowa_events.module
+files[] = uiowa_events.install
+files[] = includes/uiowa_events.admin.inc
+files[] = includes/uiowa_events.full_listing.inc
+files[] = includes/uiowa_events.single_event.inc
+files[] = includes/uiowa-events-full-listing.tpl.php
+files[] = includes/uiowa-events-single-event.tpl.php
+files[] = js/single-event.js
