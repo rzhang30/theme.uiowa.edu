@@ -48,3 +48,77 @@ header{
   font-family: $font-family-serif;
   line-height: 1.5;
 }
+
+footer{
+  background-color: $theme-footer-color;
+  margin: 0 !important;
+  padding: 10px 0;
+  .block__content{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .theme-contact{
+    margin-top: 10px;
+    ul{
+      padding: 0;
+      margin: 0;
+      text-align: right;
+      li{
+        display: inline-block;
+        list-style-type: none;
+      }
+    }
+    p{
+      text-align: right;
+      font-size: 1.4em;
+      color: $theme-link-color;
+    }
+    a{
+      color: $theme-link-color;
+    }
+    .social-media-icon a{
+      display: block;
+      line-height: 999px;
+      overflow: hidden;
+      text-align: center;
+      width: 34px;
+      height: 34px;
+      color: $theme-footer-color;
+      @include inline-block;
+      margin-right: .3em;
+      text-decoration: none;
+      background-color: $theme-link-color;
+      @include border-radius(17px);
+
+      &:before {
+        text-align: center;
+        margin-top:7px;
+        font-size: 1.4em;
+        line-height: normal;
+        display: block !important;
+      }
+    }
+    .facebook:before{
+        @include icon($fa-var-facebook);
+    }
+    .twitter:before{
+        @include icon($fa-var-twitter);
+    }
+    .instagram:before{
+        @include icon($fa-var-instagram);
+    }
+    .youtube:before{
+        @include icon($fa-var-youtube);
+    }
+    .unit-link{
+      font-size: 2em;
+      margin-top: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+    }
+  }
+
+}

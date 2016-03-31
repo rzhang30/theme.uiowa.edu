@@ -71,5 +71,8 @@
 </div> <!-- /#main-wrapper -->
 
 <footer id="footer" class="footer" role="footer">
-  <?php print render($page['footer']); ?>
+  <div class="container">
+    <?php print render($page['footer']); ?>
+  </div>
+
 </footer>

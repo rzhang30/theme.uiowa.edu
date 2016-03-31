@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url("http://overpass-30e2.kxcdn.com/overpass.css");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1048,7 +1047,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: Overpass, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1130,7 +1129,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: Overpass, Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -5191,7 +5190,7 @@ button.close {
   position: absolute;
   z-index: 1030;
   display: block;
-  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: Overpass, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5304,7 +5303,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: Overpass, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8496,10 +8495,9 @@ body {
     text-align: center;
     padding: 15px 0; }
     #nav ul.responsive-navigation-main-menu li a {
-      padding: 0 20px;
       color: #333333;
       text-decoration: none;
-      font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+      font-family: Overpass, Helvetica, Arial, sans-serif;
       font-size: 1.5rem;
       text-transform: uppercase; }
       #nav ul.responsive-navigation-main-menu li a:hover {
@@ -8512,9 +8510,9 @@ body {
     text-transform: uppercase; }
   .sidebar ul.nav-pills {
     background-color: #CCCECD;
-    border: 1px solid #FFD602;
+    border: 1px solid #FFCD07;
     padding: 10px;
-    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif; }
+    font-family: Overpass, Georgia, "Times New Roman", Times, serif; }
     .sidebar ul.nav-pills li {
       list-style-type: none;
       font-size: 1.6rem; }
@@ -8531,11 +8529,11 @@ body {
         margin-left: 20px; }
 
 header {
-  background-color: #4C4F4E;
+  background-color: #8F8D91;
   text-align: center;
   padding: 20px 0; }
   header .site-slogan {
-    font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+    font-family: Overpass, Helvetica, Arial, sans-serif;
     color: #ffffff;
     font-size: 1.3rem;
     letter-spacing: 0.1em;
@@ -8545,7 +8543,7 @@ header {
     margin: 0;
     font-size: 5rem;
     line-height: 1.2em;
-    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-family: Overpass, Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
     text-transform: uppercase; }
     header .site-name a {
@@ -8574,7 +8572,109 @@ header {
 
 .field-name-body {
   font-size: 1.6rem;
-  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-family: Overpass, Georgia, "Times New Roman", Times, serif;
   line-height: 1.5; }
+
+footer {
+  background-color: #4C4F4D;
+  margin: 0 !important;
+  padding: 10px 0; }
+  footer .block__content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  footer .theme-contact {
+    margin-top: 10px; }
+    footer .theme-contact ul {
+      padding: 0;
+      margin: 0;
+      text-align: right; }
+      footer .theme-contact ul li {
+        display: inline-block;
+        list-style-type: none; }
+    footer .theme-contact p {
+      text-align: right;
+      font-size: 1.4em;
+      color: #BCBDC0; }
+    footer .theme-contact a {
+      color: #BCBDC0; }
+    footer .theme-contact .social-media-icon a {
+      display: block;
+      line-height: 999px;
+      overflow: hidden;
+      text-align: center;
+      width: 34px;
+      height: 34px;
+      color: #4C4F4D;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline;
+      margin-right: .3em;
+      text-decoration: none;
+      background-color: #BCBDC0;
+      border-radius: 17px; }
+      footer .theme-contact .social-media-icon a:before {
+        text-align: center;
+        margin-top: 7px;
+        font-size: 1.4em;
+        line-height: normal;
+        display: block !important; }
+    footer .theme-contact .facebook:before {
+      content: "";
+      display: inline-block;
+      font: normal normal normal 14px / 1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    footer .theme-contact .twitter:before {
+      content: "";
+      display: inline-block;
+      font: normal normal normal 14px / 1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    footer .theme-contact .instagram:before {
+      content: "";
+      display: inline-block;
+      font: normal normal normal 14px / 1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    footer .theme-contact .youtube:before {
+      content: "";
+      display: inline-block;
+      font: normal normal normal 14px / 1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    footer .theme-contact .unit-link {
+      font-size: 2em;
+      margin-top: 10px;
+      font-weight: 600;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=theme_semester.style.css.map */

@@ -7,9 +7,10 @@ $bootstrap-sass-asset-helper: false !default;
 // Global values
 // -----------------------------------------------------------------------------
 
-$theme-primary-color: #4C4F4E;
-$theme-alt-color: #FFD602;
-$theme-link-color: #0088CC;
+$theme-primary-color: #8F8D91;
+$theme-alt-color: #FFCD07;
+$theme-link-color: #BCBDC0;
+$theme-footer-color: #4C4F4D;
 
 // Grays
 // -----------------------------------------------------------------------------
@@ -44,8 +45,8 @@ $link-hover-color:      darken($link-color, 15%) !default;
 // Typography
 // -----------------------------------------------------------------------------
 
-$font-family-sans-serif:  "Droid Sans", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "Droid Serif", Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  Overpass, Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Overpass, Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
