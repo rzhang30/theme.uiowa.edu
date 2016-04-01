@@ -1,0 +1,23 @@
+.page-events{
+  .uiowa-event{
+    clear: left;
+
+    img{
+      float: left;
+      margin-bottom: 20px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.page-event{
+  .event-location,
+  .event-address,
+  .event-description{
+    margin-top:10px;
+  }
+
+  .future-instances-toggle{
+    cursor: pointer;
+  }
+}

@@ -58,6 +58,11 @@ footer{
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: space-between;
+      color: #FFF;
+  }
+  .justliving-footer-office{
+    text-transform: uppercase;
+    font-weight: 600;
   }
   .theme-contact{
     margin-top: 10px;
@@ -72,11 +77,11 @@ footer{
     }
     p{
       text-align: right;
-      font-size: 1.4em;
-      color: $theme-link-color;
+      font-size: 1.3em;
+      color: #FFF;
     }
     a{
-      color: $theme-link-color;
+      color: #FFF;
     }
     .social-media-icon a{
       display: block;
@@ -89,7 +94,7 @@ footer{
       @include inline-block;
       margin-right: .3em;
       text-decoration: none;
-      background-color: $theme-link-color;
+      background-color: #FFF;
       @include border-radius(17px);
 
       &:before {
@@ -113,7 +118,7 @@ footer{
         @include icon($fa-var-youtube);
     }
     .unit-link{
-      font-size: 2em;
+      font-size: 1.8em;
       margin-top: 10px;
       font-weight: 600;
       text-transform: uppercase;

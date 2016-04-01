@@ -8481,6 +8481,21 @@ ul.dropdown-menu li {
 body {
   -webkit-font-smoothing: antialiased; }
 
+.page-events .uiowa-event {
+  clear: left; }
+  .page-events .uiowa-event img {
+    float: left;
+    margin-bottom: 20px;
+    padding-right: 10px; }
+
+.page-event .event-location,
+.page-event .event-address,
+.page-event .event-description {
+  margin-top: 10px; }
+
+.page-event .future-instances-toggle {
+  cursor: pointer; }
+
 .navbar {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
 
@@ -8591,7 +8606,11 @@ footer {
             flex-direction: row;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    color: #FFF; }
+  footer .justliving-footer-office {
+    text-transform: uppercase;
+    font-weight: 600; }
   footer .theme-contact {
     margin-top: 10px; }
     footer .theme-contact ul {
@@ -8603,10 +8622,10 @@ footer {
         list-style-type: none; }
     footer .theme-contact p {
       text-align: right;
-      font-size: 1.4em;
-      color: #BCBDC0; }
+      font-size: 1.3em;
+      color: #FFF; }
     footer .theme-contact a {
-      color: #BCBDC0; }
+      color: #FFF; }
     footer .theme-contact .social-media-icon a {
       display: block;
       line-height: 999px;
@@ -8623,7 +8642,7 @@ footer {
       *display: inline;
       margin-right: .3em;
       text-decoration: none;
-      background-color: #BCBDC0;
+      background-color: #FFF;
       border-radius: 17px; }
       footer .theme-contact .social-media-icon a:before {
         text-align: center;
@@ -8672,7 +8691,7 @@ footer {
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0); }
     footer .theme-contact .unit-link {
-      font-size: 2em;
+      font-size: 1.8em;
       margin-top: 10px;
       font-weight: 600;
       text-transform: uppercase; }
