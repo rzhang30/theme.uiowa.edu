@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Theme Semester People feature.
+ */
+
+include_once 'theme_semester_people.features.inc';
