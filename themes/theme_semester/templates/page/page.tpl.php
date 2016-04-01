@@ -14,9 +14,14 @@
   <?php if ($site_slogan): ?>
     <div class="site-slogan"><?php print $site_slogan; ?></div>
   <?php endif; ?>
+  <?php if ($logo): ?>
+    <div><a href="<?php print $front_page; ?>" rel="home" class="site-name" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"  /></a></div>
+  <?php endif; ?>
+  <!--
   <?php if ($site_name): ?>
     <h1 class="site-name"><a href="<?php print $front_page; ?>" rel="home" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
   <?php endif; ?>
+  -->
 </header>
 
 <nav class="navbar">
