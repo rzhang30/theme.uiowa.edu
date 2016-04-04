@@ -10,6 +10,144 @@
 function theme_semester_collaborator_entity_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'field_collection_item-field_collaborator_contacts-field_collaborator_email'.
+  $field_instances['field_collection_item-field_collaborator_contacts-field_collaborator_email'] = array(
+    'bundle' => 'field_collaborator_contacts',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_collaborator_email',
+    'label' => 'Email Address',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_collaborator_contacts-field_collaborator_job_title'.
+  $field_instances['field_collection_item-field_collaborator_contacts-field_collaborator_job_title'] = array(
+    'bundle' => 'field_collaborator_contacts',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_collaborator_job_title',
+    'label' => 'Job Title',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_collaborator_contacts-field_collaborator_name'.
+  $field_instances['field_collection_item-field_collaborator_contacts-field_collaborator_name'] = array(
+    'bundle' => 'field_collaborator_contacts',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_collaborator_name',
+    'label' => 'Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_collaborator_contacts-field_collaborator_phone'.
+  $field_instances['field_collection_item-field_collaborator_contacts-field_collaborator_phone'] = array(
+    'bundle' => 'field_collaborator_contacts',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_collaborator_phone',
+    'label' => 'Phone Number',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'telephone',
+      'settings' => array(
+        'placeholder' => '',
+      ),
+      'type' => 'telephone_default',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-collaborator-body'.
   $field_instances['node-collaborator-body'] = array(
     'bundle' => 'collaborator',
@@ -50,91 +188,12 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'node-collaborator-field_collaborator_department'.
-  $field_instances['node-collaborator-field_collaborator_department'] = array(
-    'bundle' => 'collaborator',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_collaborator_department',
-    'label' => 'Department',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-collaborator-field_collaborator_email'.
-  $field_instances['node-collaborator-field_collaborator_email'] = array(
-    'bundle' => 'collaborator',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'email',
-        'settings' => array(),
-        'type' => 'email_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_collaborator_email',
-    'label' => 'Email Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'email',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'email_textfield',
       'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-collaborator-field_collaborator_job_title'.
-  $field_instances['node-collaborator-field_collaborator_job_title'] = array(
+  // Exported field_instance: 'node-collaborator-field_collaborator_contacts'.
+  $field_instances['node-collaborator-field_collaborator_contacts'] = array(
     'bundle' => 'collaborator',
     'default_value' => NULL,
     'deleted' => 0,
@@ -142,10 +201,16 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => '',
+          'delete' => '',
+          'description' => 0,
+          'edit' => '',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -155,97 +220,18 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_collaborator_job_title',
-    'label' => 'Job Title',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-collaborator-field_collaborator_phone'.
-  $field_instances['node-collaborator-field_collaborator_phone'] = array(
-    'bundle' => 'collaborator',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_collaborator_phone',
-    'label' => 'Phone Number',
+    'field_name' => 'field_collaborator_contacts',
+    'label' => 'Contact(s)',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'telephone',
-      'settings' => array(
-        'placeholder' => '',
-      ),
-      'type' => 'telephone_default',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'node-collaborator-field_collaborator_type'.
-  $field_instances['node-collaborator-field_collaborator_type'] = array(
-    'bundle' => 'collaborator',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_collaborator_type',
-    'label' => 'Type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
+      'active' => 0,
+      'module' => 'field_collection',
       'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 9,
+      'type' => 'field_collection_embed',
+      'weight' => 3,
     ),
   );
 
@@ -261,7 +247,7 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -302,18 +288,18 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Department');
+  t('Contact(s)');
   t('Email Address');
   t('Job Title');
+  t('Name');
   t('Phone Number');
-  t('Type');
   t('Website');
 
   return $field_instances;
