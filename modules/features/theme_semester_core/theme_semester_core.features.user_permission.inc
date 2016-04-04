@@ -234,6 +234,15 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'administer field collections'.
+  $permissions['administer field collections'] = array(
+    'name' => 'administer field collections',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field_collection',
+  );
+
   // Exported permission: 'administer file types'.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
@@ -476,6 +485,15 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer varnish'.
+  $permissions['administer varnish'] = array(
+    'name' => 'administer varnish',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'varnish',
+  );
+
   // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
@@ -602,9 +620,42 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create front_page_feature_entity content'.
+  $permissions['create front_page_feature_entity content'] = array(
+    'name' => 'create front_page_feature_entity content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create partner content'.
+  $permissions['create partner content'] = array(
+    'name' => 'create partner content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create person content'.
+  $permissions['create person content'] = array(
+    'name' => 'create person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -707,6 +758,17 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any front_page_feature_entity content'.
+  $permissions['delete any front_page_feature_entity content'] = array(
+    'name' => 'delete any front_page_feature_entity content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
@@ -719,6 +781,28 @@ function theme_semester_core_user_default_permissions() {
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any partner content'.
+  $permissions['delete any partner content'] = array(
+    'name' => 'delete any partner content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any person content'.
+  $permissions['delete any person content'] = array(
+    'name' => 'delete any person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -800,6 +884,17 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete own front_page_feature_entity content'.
+  $permissions['delete own front_page_feature_entity content'] = array(
+    'name' => 'delete own front_page_feature_entity content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own image files'.
   $permissions['delete own image files'] = array(
     'name' => 'delete own image files',
@@ -814,6 +909,28 @@ function theme_semester_core_user_default_permissions() {
   // Exported permission: 'delete own page content'.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own partner content'.
+  $permissions['delete own partner content'] = array(
+    'name' => 'delete own partner content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own person content'.
+  $permissions['delete own person content'] = array(
+    'name' => 'delete own person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1021,6 +1138,17 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any front_page_feature_entity content'.
+  $permissions['edit any front_page_feature_entity content'] = array(
+    'name' => 'edit any front_page_feature_entity content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -1035,6 +1163,28 @@ function theme_semester_core_user_default_permissions() {
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any partner content'.
+  $permissions['edit any partner content'] = array(
+    'name' => 'edit any partner content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any person content'.
+  $permissions['edit any person content'] = array(
+    'name' => 'edit any person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1129,6 +1279,17 @@ function theme_semester_core_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit own front_page_feature_entity content'.
+  $permissions['edit own front_page_feature_entity content'] = array(
+    'name' => 'edit own front_page_feature_entity content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own image files'.
   $permissions['edit own image files'] = array(
     'name' => 'edit own image files',
@@ -1143,6 +1304,28 @@ function theme_semester_core_user_default_permissions() {
   // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own partner content'.
+  $permissions['edit own partner content'] = array(
+    'name' => 'edit own partner content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own person content'.
+  $permissions['edit own person content'] = array(
+    'name' => 'edit own person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1347,6 +1530,7 @@ function theme_semester_core_user_default_permissions() {
     'name' => 'use panels in place editing',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'panels',
   );
