@@ -5,3 +5,7 @@
  */
 
 include_once 'theme_semester_core.features.inc';
+
+function theme_semester_core_preprocess_maintenance_page(&$vars) {
+  drupal_add_http_header('Status', '200 OK');
+}
