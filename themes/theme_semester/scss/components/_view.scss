@@ -1,2 +1,26 @@
 // Styles for Views
 // -----------------------------------------------------------------------------
+
+.view-display-id-front_page_feature_panel{
+  background-color: $theme-link-color;
+  margin-bottom: 20px;
+  @include clearfix();
+  a{
+    color: $theme-footer-color;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .views-field-field-image{
+    margin-right: 20px;
+    float: left;
+  }
+  .views-field-title{
+    font-size: 3em;
+    padding-top: 20px;
+  }
+  .btn-default{
+    background-color: $theme-alt-color;
+    border-color: $theme-footer-color;
+  }
+}

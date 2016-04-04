@@ -1,2 +1,23 @@
 // Styles for panels and panes.
 // -----------------------------------------------------------------------------
+
+.front{
+  .panel-col-top{
+    .pane-custom{
+      width: 80%;
+      margin: 20px auto;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.center-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  .panel-panel{
+    float: none;
+    width: inherit;
+    text-align: center;
+  }
+}

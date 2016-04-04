@@ -8699,4 +8699,44 @@ footer {
       font-weight: 600;
       text-transform: uppercase; }
 
+.front .panel-col-top .pane-custom {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 1.2em; }
+
+.center-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto; }
+  .center-wrapper .panel-panel {
+    float: none;
+    width: inherit;
+    text-align: center; }
+
+.view-display-id-front_page_feature_panel {
+  background-color: #BCBDC0;
+  margin-bottom: 20px; }
+  .view-display-id-front_page_feature_panel:before, .view-display-id-front_page_feature_panel:after {
+    content: " ";
+    display: table; }
+  .view-display-id-front_page_feature_panel:after {
+    clear: both; }
+  .view-display-id-front_page_feature_panel a {
+    color: #4C4F4D; }
+    .view-display-id-front_page_feature_panel a:hover {
+      text-decoration: none; }
+  .view-display-id-front_page_feature_panel .views-field-field-image {
+    margin-right: 20px;
+    float: left; }
+  .view-display-id-front_page_feature_panel .views-field-title {
+    font-size: 3em;
+    padding-top: 20px; }
+  .view-display-id-front_page_feature_panel .btn-default {
+    background-color: #FFCD07;
+    border-color: #4C4F4D; }
+
 /*# sourceMappingURL=theme_semester.style.css.map */

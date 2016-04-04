@@ -76,6 +76,7 @@ function theme_semester_front_page_feature_entity_views_default_views() {
   $handler->display->display_options['fields']['field_front_page_feature_link']['table'] = 'field_data_field_front_page_feature_link';
   $handler->display->display_options['fields']['field_front_page_feature_link']['field'] = 'field_front_page_feature_link';
   $handler->display->display_options['fields']['field_front_page_feature_link']['label'] = '';
+  $handler->display->display_options['fields']['field_front_page_feature_link']['element_class'] = 'btn btn-default';
   $handler->display->display_options['fields']['field_front_page_feature_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_front_page_feature_link']['click_sort_column'] = 'url';
   /* Sort criterion: Global: Random */
