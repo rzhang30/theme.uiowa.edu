@@ -249,6 +249,59 @@ function theme_semester_article_entity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_image'.
+  $field_instances['node-article-field_image'] = array(
+    'bundle' => 'article',
+    'deleted' => 0,
+    'description' => 'Upload an image to go with this article.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'large',
+        ),
+        'type' => 'image',
+        'weight' => -1,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'medium',
+        ),
+        'type' => 'image',
+        'weight' => -1,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image',
+    'label' => 'Image',
+    'required' => FALSE,
+    'settings' => array(
+      'alt_field' => TRUE,
+      'default_image' => 0,
+      'file_directory' => 'field/image',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => -1,
+    ),
+  );
+
   // Exported field_instance: 'node-article-field_tags'.
   $field_instances['node-article-field_tags'] = array(
     'bundle' => 'article',
@@ -295,6 +348,7 @@ function theme_semester_article_entity_field_default_field_instances() {
   t('Enter a comma-separated list of words to describe your content.');
   t('Enter the authoritative source for this article.');
   t('External URL');
+  t('Image');
   t('IowaNow URL');
   t('Publication Source');
   t('Tags');
@@ -302,6 +356,7 @@ function theme_semester_article_entity_field_default_field_instances() {
   t('The URL to the article, on an external website.');
   t('The publication source is the news service, blog or other publication name. E.x. NPR or Daily Iowan.');
   t('Type');
+  t('Upload an image to go with this article.');
 
   return $field_instances;
 }
