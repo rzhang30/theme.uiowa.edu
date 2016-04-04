@@ -21,6 +21,7 @@ features[variable][] = menu_parent_partner
 features[variable][] = node_options_partner
 features[variable][] = node_preview_partner
 features[variable][] = node_submitted_partner
+features[variable][] = pathauto_node_partner_pattern
 features[views_view][] = partners
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][image] = image
