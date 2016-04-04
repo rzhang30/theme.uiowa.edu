@@ -14,6 +14,13 @@ function theme_semester_collaborator_entity_ctools_plugin_api($module = NULL, $a
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function theme_semester_collaborator_entity_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function theme_semester_collaborator_entity_node_info() {
