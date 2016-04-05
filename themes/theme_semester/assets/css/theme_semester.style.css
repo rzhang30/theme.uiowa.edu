@@ -8717,6 +8717,14 @@ footer {
     width: inherit;
     text-align: center; }
 
+.panels-ipe-editing .center-wrapper {
+  display: block;
+  margin: 20px auto; }
+  .panels-ipe-editing .center-wrapper .panel-panel {
+    float: left;
+    width: 33%;
+    text-align: center; }
+
 .view-display-id-front_page_feature_panel {
   background-color: #BCBDC0;
   margin-bottom: 20px; }

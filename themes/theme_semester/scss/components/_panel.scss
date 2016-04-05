@@ -21,3 +21,14 @@
     text-align: center;
   }
 }
+.panels-ipe-editing{
+  .center-wrapper{
+    display: block;
+    margin: 20px auto;
+    .panel-panel{
+      float: left;
+      width: 33%;
+      text-align: center;
+    }
+  }
+}
