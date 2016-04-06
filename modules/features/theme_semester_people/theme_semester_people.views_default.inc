@@ -47,6 +47,17 @@ function theme_semester_people_views_default_views() {
   $handler->display->display_options['fields']['field_person_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_person_link']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_person_link']['type'] = 'link_absolute';
+  /* Field: Content: Headshot */
+  $handler->display->display_options['fields']['field_person_headshot']['id'] = 'field_person_headshot';
+  $handler->display->display_options['fields']['field_person_headshot']['table'] = 'field_data_field_person_headshot';
+  $handler->display->display_options['fields']['field_person_headshot']['field'] = 'field_person_headshot';
+  $handler->display->display_options['fields']['field_person_headshot']['label'] = '';
+  $handler->display->display_options['fields']['field_person_headshot']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_person_headshot']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_person_headshot']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -78,7 +89,6 @@ function theme_semester_people_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
