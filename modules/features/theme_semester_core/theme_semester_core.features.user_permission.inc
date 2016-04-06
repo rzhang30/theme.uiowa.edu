@@ -1483,6 +1483,7 @@ function theme_semester_core_user_default_permissions() {
     'name' => 'use ipe with page manager',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'panels',
   );
@@ -1503,6 +1504,7 @@ function theme_semester_core_user_default_permissions() {
     'name' => 'use page manager',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'page_manager',
   );

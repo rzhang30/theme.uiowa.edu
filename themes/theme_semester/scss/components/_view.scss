@@ -24,3 +24,16 @@
     border-color: $theme-footer-color;
   }
 }
+
+.view-id-people{
+  .views-field-field-person-attributes{
+    li{
+      list-style-type: none;
+      margin: 0;
+      .field-name-field-person-attribute-title{
+        float: left;
+        margin-right: 5px;
+      }
+    }
+  }
+}

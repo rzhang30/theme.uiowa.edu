@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("http://overpass-30e2.kxcdn.com/overpass.css");
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1047,7 +1047,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: Overpass, Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1129,7 +1129,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: Overpass, Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -5190,7 +5190,7 @@ button.close {
   position: absolute;
   z-index: 1030;
   display: block;
-  font-family: Overpass, Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5303,7 +5303,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Overpass, Helvetica, Arial, sans-serif;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8512,7 +8512,7 @@ body {
     #nav ul.responsive-navigation-main-menu li a {
       color: #333333;
       text-decoration: none;
-      font-family: Overpass, Helvetica, Arial, sans-serif;
+      font-family: Lato, Helvetica, Arial, sans-serif;
       font-size: 1.5rem;
       text-transform: uppercase; }
       #nav ul.responsive-navigation-main-menu li a:hover {
@@ -8527,7 +8527,7 @@ body {
     background-color: #CCCECD;
     border: 1px solid #FFCD07;
     padding: 10px;
-    font-family: Overpass, Georgia, "Times New Roman", Times, serif; }
+    font-family: Lato, Georgia, "Times New Roman", Times, serif; }
     .sidebar ul.nav-pills li {
       list-style-type: none;
       font-size: 1.6rem; }
@@ -8548,7 +8548,7 @@ header {
   text-align: center;
   padding: 20px 0; }
   header .site-slogan {
-    font-family: Overpass, Helvetica, Arial, sans-serif;
+    font-family: Lato, Helvetica, Arial, sans-serif;
     color: #ffffff;
     font-size: 1.3rem;
     letter-spacing: 0.1em;
@@ -8558,7 +8558,7 @@ header {
     margin: 0;
     font-size: 5rem;
     line-height: 1.2em;
-    font-family: Overpass, Georgia, "Times New Roman", Times, serif;
+    font-family: Lato, Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
     text-transform: uppercase; }
     header .site-name a {
@@ -8590,7 +8590,7 @@ header {
 
 .field-name-body {
   font-size: 1.6rem;
-  font-family: Overpass, Georgia, "Times New Roman", Times, serif;
+  font-family: Lato, Georgia, "Times New Roman", Times, serif;
   line-height: 1.5; }
 
 footer {
@@ -8746,5 +8746,12 @@ footer {
   .view-display-id-front_page_feature_panel .btn-default {
     background-color: #FFCD07;
     border-color: #4C4F4D; }
+
+.view-id-people .views-field-field-person-attributes li {
+  list-style-type: none;
+  margin: 0; }
+  .view-id-people .views-field-field-person-attributes li .field-name-field-person-attribute-title {
+    float: left;
+    margin-right: 5px; }
 
 /*# sourceMappingURL=theme_semester.style.css.map */
