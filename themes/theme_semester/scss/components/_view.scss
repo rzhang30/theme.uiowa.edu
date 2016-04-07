@@ -26,6 +26,10 @@
 }
 
 .view-id-people{
+  .views-field-title{
+    font-size: 1.2em;
+    font-weight: 700;
+  }
   .views-field-field-person-attributes{
     li{
       list-style-type: none;
@@ -34,6 +38,29 @@
         float: left;
         margin-right: 5px;
       }
+    }
+  }
+}
+
+.page-about-advisory-board,
+.page-about-planning-committee{
+  .field-name-field-person-attribute-title{
+    display: none;
+  }
+}
+
+
+.view-id-partners{
+  .views-row{
+    clear: left;
+    .views-field-field-partner-logo{
+      float: left;
+      margin-right: 20px;
+    }
+    .views-field-title{
+      font-size: 1.2em;
+      font-weight: 700;
+      margin-top: 40px;
     }
   }
 }

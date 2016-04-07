@@ -8747,11 +8747,29 @@ footer {
     background-color: #FFCD07;
     border-color: #4C4F4D; }
 
+.view-id-people .views-field-title {
+  font-size: 1.2em;
+  font-weight: 700; }
+
 .view-id-people .views-field-field-person-attributes li {
   list-style-type: none;
   margin: 0; }
   .view-id-people .views-field-field-person-attributes li .field-name-field-person-attribute-title {
     float: left;
     margin-right: 5px; }
+
+.page-about-advisory-board .field-name-field-person-attribute-title,
+.page-about-planning-committee .field-name-field-person-attribute-title {
+  display: none; }
+
+.view-id-partners .views-row {
+  clear: left; }
+  .view-id-partners .views-row .views-field-field-partner-logo {
+    float: left;
+    margin-right: 20px; }
+  .view-id-partners .views-row .views-field-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 40px; }
 
 /*# sourceMappingURL=theme_semester.style.css.map */

@@ -38,7 +38,7 @@ function theme_semester_article_entity_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = 'Please submit a news item about Theme Semester events, activities, and opportunities occurring on campus and throughout the state. News items can include newspaper articles, press releases, video links, photos, and more.';
+  $handler->display->display_options['header']['area']['content'] = 'Please <a href="http://theme.uiowa.edu/submit-news-item">submit a news item</a> about Theme Semester events, activities, and opportunities occurring on campus and throughout the state. News items can include newspaper articles, press releases, video links, photos, and more.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
