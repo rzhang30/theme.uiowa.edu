@@ -19,11 +19,11 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -53,11 +53,11 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -88,11 +88,11 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -123,11 +123,11 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_plain',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -210,7 +210,7 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -247,7 +247,7 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -258,7 +258,7 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_collaborator_website',
-    'label' => 'Website',
+    'label' => 'Connect With Us',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -295,12 +295,12 @@ function theme_semester_collaborator_entity_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Connect With Us');
   t('Contact(s)');
   t('Email Address');
   t('Job Title');
   t('Name');
   t('Phone Number');
-  t('Website');
 
   return $field_instances;
 }

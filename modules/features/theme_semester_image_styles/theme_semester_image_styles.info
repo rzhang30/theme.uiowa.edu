@@ -5,3 +5,5 @@ version = 7.x-1.0
 dependencies[] = image
 features[features_api][] = api:2
 features[image][] = event_thumbnail
+features[image][] = front_page_feature
+features[image][] = front_page_spotlight
