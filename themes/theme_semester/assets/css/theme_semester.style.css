@@ -8499,24 +8499,37 @@ body {
 .navbar {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
 
-#nav ul.responsive-navigation-main-menu {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  #nav ul.responsive-navigation-main-menu li {
-    text-align: center;
-    padding: 15px 0; }
-    #nav ul.responsive-navigation-main-menu li a {
+.block-responsive-navigation #nav-toggle {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3em;
+  display: block; }
+
+.block-responsive-navigation #nav ul.responsive-navigation-main-menu li {
+  text-align: center; }
+  .block-responsive-navigation #nav ul.responsive-navigation-main-menu li a {
+    padding: 10px;
+    display: block; }
+
+@media screen and (min-width: 620px) {
+  .block-responsive-navigation #nav-toggle {
+    display: none; }
+  .block-responsive-navigation #nav ul.responsive-navigation-main-menu {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .block-responsive-navigation #nav ul.responsive-navigation-main-menu li a {
+      padding: 10px 0;
       color: #333333;
       text-decoration: none;
       font-family: Lato, Helvetica, Arial, sans-serif;
       font-size: 1.5rem;
       text-transform: uppercase; }
-      #nav ul.responsive-navigation-main-menu li a:hover {
-        text-decoration: underline; }
+      .block-responsive-navigation #nav ul.responsive-navigation-main-menu li a:hover {
+        text-decoration: underline; } }
 
 .sidebar {
   padding: 20px; }
