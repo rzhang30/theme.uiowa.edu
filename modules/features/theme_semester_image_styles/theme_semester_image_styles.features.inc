@@ -29,10 +29,10 @@ function theme_semester_image_styles_image_default_styles() {
   $styles['front_page_feature'] = array(
     'label' => 'Front Page Feature',
     'effects' => array(
-      2 => array(
+      1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 570,
+          'width' => 700,
           'height' => 400,
         ),
         'weight' => 1,

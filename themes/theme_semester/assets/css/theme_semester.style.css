@@ -8699,6 +8699,9 @@ footer {
       font-weight: 600;
       text-transform: uppercase; }
 
+.node-type-collaborator .entity-field-collection-item .field-label {
+  width: inherit; }
+
 .front .panel-col-top .pane-custom {
   width: 80%;
   margin: 20px auto;
@@ -8727,7 +8730,8 @@ footer {
 
 .view-display-id-front_page_feature_panel {
   background-color: #BCBDC0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-right: 20px; }
   .view-display-id-front_page_feature_panel:before, .view-display-id-front_page_feature_panel:after {
     content: " ";
     display: table; }
@@ -8770,6 +8774,6 @@ footer {
   .view-id-partners .views-row .views-field-title {
     font-size: 1.2em;
     font-weight: 700;
-    margin-top: 40px; }
+    padding-top: 40px; }
 
 /*# sourceMappingURL=theme_semester.style.css.map */
