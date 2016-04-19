@@ -8767,6 +8767,9 @@ footer {
     margin-left: 20px; }
   .view-display-id-front_page_feature_panel .views-field-body {
     margin-left: 20px; }
+    .view-display-id-front_page_feature_panel .views-field-body p {
+      font-size: 1.2em;
+      line-height: 1.5em; }
   .view-display-id-front_page_feature_panel .btn-default {
     background-color: #FFCD07;
     border-color: #4C4F4D;
